@@ -7,7 +7,6 @@ export default class MessageSender extends React.Component {
     this.state = {title: props.initialTitle, text: props.initialText};
   }
 
-
   handleTitleChange(e) {
     this.setState({title: e.target.value});
   }
