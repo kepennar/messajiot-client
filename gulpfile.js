@@ -1,18 +1,7 @@
 'use strict';
 
 var gulp = require('gulp');
-var del = require('del');
 var wrench = require('wrench');
-var path = require('path');
-
-// Load plugins
-var $ = require('gulp-load-plugins')();
-
-
-
-
-var browserSync = require('browser-sync');
-var reload = browserSync.reload;
 
 /**
  *  This will load all js or coffee files in the gulp directory

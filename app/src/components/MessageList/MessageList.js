@@ -4,7 +4,7 @@ import Request from '../../utils/Request'
 export default class MessageList extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {messages: props.initialMessages};
+    this.state = {messages: props.initialMessages};    
   }
 
   componentDidMount() {
@@ -16,7 +16,14 @@ export default class MessageList extends React.Component {
       this.setState({
         messages: messages
       });
-    })
+    });
+    var es = new EventSource('/sse');
+    es.onmessage = (event) => {
+      let newMessagesList = this.state.messages.push(event.data);
+      this.setState({
+        messages: newMessagesList
+      });
+    };
   }
 
   render() {
