@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "dependencies": {
     "bluebird": "^2.9.34",
-    "bootstrap-sass": "^3.3.5"
+    "bootstrap-sass": "^3.3.5",
+    "lodash": "^3.10.0"
   },
   "devDependencies": {
     "babelify": "^6.1.3",

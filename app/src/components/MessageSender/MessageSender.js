@@ -41,11 +41,11 @@ export default class MessageSender extends React.Component {
         <legend>Send a new message</legend>
         <form onSubmit={this.handleSubmit.bind(this)}>
           <div className="form-group">
-            <label for="title">Title</label>
+            <label htmlFor="title">Title</label>
             <input onChange={this.handleTitleChange.bind(this)} value={this.state.title} id="title" className="form-control" />
           </div>
           <div className="form-group">
-            <label for="text">Text</label>
+            <label htmlFor="text">Text</label>
             <input onChange={this.handleTextChange.bind(this)} value={this.state.text} id="text" className="form-control" />
           </div>          
           <button type="submit" className="btn btn-primary pull-right">Add</button>

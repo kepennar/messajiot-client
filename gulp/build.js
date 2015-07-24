@@ -28,7 +28,7 @@ gulp.task('images', function() {
 
 // Fonts
 gulp.task('fonts', function() {
-  return gulp.src('**/*.{eot,svg,ttf,woff,woff2}')
+  return gulp.src('./node_modules/bootstrap-sass/assets/fonts/**/*.{eot,svg,ttf,woff,woff2}')
     .pipe($.flatten())
     .pipe(gulp.dest(conf.paths.dist + '/fonts/'))
     .pipe($.size());
